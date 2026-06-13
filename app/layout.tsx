@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { LangProvider } from '@/context/LangContext'
 
 export const metadata: Metadata = {
   title: {
@@ -33,17 +34,10 @@ export const metadata: Metadata = {
     title: 'Synapxi Tech',
     description: 'Strategic advisory for AI, tokenization, product innovation and digital transformation.',
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -52,9 +46,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="bg-[#001B4E] text-white font-body">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <LangProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </LangProvider>
       </body>
     </html>
   )
