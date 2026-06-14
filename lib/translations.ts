@@ -1,0 +1,241 @@
+export type Lang = 'en' | 'es'
+
+export const translations = {
+  // ─── NAV ───────────────────────────────────────────────────────────────────
+  nav: {
+    home:         { en: 'Home',          es: 'Inicio' },
+    services:     { en: 'Services',      es: 'Servicios' },
+    caseStudies:  { en: 'Case Studies',  es: 'Casos de Éxito' },
+    about:        { en: 'About',         es: 'Nosotros' },
+    insights:     { en: 'Insights',      es: 'Publicaciones' },
+    contact:      { en: 'Contact',       es: 'Contacto' },
+    cta:          { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+  },
+
+  // ─── HOME ──────────────────────────────────────────────────────────────────
+  home: {
+    // Hero
+    heroTagline:  { en: 'AI-First Innovation Advisory', es: 'Asesoría de Innovación AI-First' },
+    heroDiff:     { en: 'Enterprise-grade delivery experience combined with emerging technology strategy.', es: 'Experiencia de entrega empresarial combinada con estrategia de tecnología emergente.' },
+    heroH1a:      { en: 'Innovate.', es: 'Innova.' },
+    heroH1b:      { en: 'Disrupt.', es: 'Disrumpe.' },
+    heroH1c:      { en: 'Globalize.', es: 'Globaliza.' },
+    heroSub:      { en: 'We help organizations turn AI strategy, tokenization and product innovation into sustainable competitive advantage — combining enterprise delivery discipline with frontier technology expertise.', es: 'Ayudamos a las organizaciones a convertir la estrategia de IA, la tokenización y la innovación de producto en ventajas competitivas sostenibles — combinando disciplina de entrega empresarial con expertise en tecnología de vanguardia.' },
+    heroCta1:     { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+    heroCta2:     { en: 'Explore Case Studies', es: 'Ver Casos de Éxito' },
+    scrollCue:    { en: 'Scroll', es: 'Scroll' },
+
+    // Proven Outcomes
+    provenTag:    { en: 'Proven Outcomes', es: 'Resultados Demostrados' },
+    provenH2:     { en: 'Results That Speak Without Naming Names', es: 'Resultados que Hablan Sin Nombrar Nombres' },
+    provenSub:    { en: 'Across financial services, AI, payments, tokenization and enterprise transformation — in Europe, the Americas, and beyond.', es: 'En servicios financieros, IA, pagos, tokenización y transformación empresarial — en Europa, las Américas y más allá.' },
+    proven1Val:   { en: '50,000', es: '50.000' },
+    proven1Lab:   { en: 'TPS — Payment infrastructure scaled', es: 'TPS — Infraestructura de pagos escalada' },
+    proven2Val:   { en: '2.5M+', es: '2,5M+' },
+    proven2Lab:   { en: 'Banking users migrated to digital platforms', es: 'Usuarios bancarios migrados a plataformas digitales' },
+    proven3Val:   { en: '€470M', es: '€470M' },
+    proven3Lab:   { en: 'In tokenized and digital assets scoped', es: 'En activos tokenizados y digitales delimitados' },
+    proven4Val:   { en: '90%', es: '90%' },
+    proven4Lab:   { en: 'Operations effort reduction through automation', es: 'Reducción del esfuerzo operativo mediante automatización' },
+    proven5Val:   { en: '85%', es: '85%' },
+    proven5Lab:   { en: 'Fraud reduction via AI-powered detection', es: 'Reducción del fraude con detección basada en IA' },
+    proven6Val:   { en: '15 TB/day', es: '15 TB/día' },
+    proven6Lab:   { en: 'Security analytics processed in real time', es: 'Analítica de seguridad procesada en tiempo real' },
+
+    // Services
+    servicesTag:  { en: 'What We Do', es: 'Qué Hacemos' },
+    servicesH2:   { en: 'Advisory Services', es: 'Servicios de Consultoría' },
+    servicesSub:  { en: 'AI strategy is our primary focus. We also bring deep expertise in Web3, payments, product leadership and transformation — credibly combined, not as a generalist.', es: 'La estrategia de IA es nuestro enfoque principal. También aportamos expertise profundo en Web3, pagos, liderazgo de producto y transformación — combinados de forma creíble, no como generalistas.' },
+    servicesLink: { en: 'View All Services', es: 'Ver Todos los Servicios' },
+    serviceLearn: { en: 'Learn more', es: 'Saber más' },
+
+    // Featured case study
+    featuredTag:  { en: 'Featured Case Study', es: 'Caso de Éxito Destacado' },
+    featuredH2:   { en: 'Payments Automation at Scale', es: 'Automatización de Pagos a Escala' },
+    featuredSub:  { en: 'A Latin American fintech needed to scale payment reconciliation operations while dramatically reducing manual overhead. We designed and delivered a product strategy and automation architecture that transformed their operations.', es: 'Una fintech latinoamericana necesitaba escalar sus operaciones de conciliación de pagos reduciendo drásticamente el trabajo manual. Diseñamos y entregamos una estrategia de producto y arquitectura de automatización.' },
+    featuredCta:  { en: 'Read Case Study', es: 'Ver Caso de Éxito' },
+    metric1:      { en: 'Monthly Transactions', es: 'Transacciones Mensuales' },
+    metric2:      { en: 'Automation Rate', es: 'Tasa de Automatización' },
+    metric3:      { en: 'Active Users', es: 'Usuarios Activos' },
+    metric4:      { en: 'Annual Work Hours Saved', es: 'Horas de Trabajo Ahorradas/Año' },
+
+    // Capability Ecosystem
+    ecoTag:       { en: 'The Intersection Advantage', es: 'La Ventaja de la Intersección' },
+    ecoH2:        { en: 'Proven Across Enterprise & Emerging Technology', es: 'Demostrado en Empresa y Tecnología Emergente' },
+    ecoSub:       { en: 'Most competitors own one domain. Synapxi Tech owns the intersection. Our capability ecosystem is designed to solve problems that single-domain advisors cannot.', es: 'La mayoría de los competidores dominan un solo ámbito. Synapxi Tech domina la intersección. Nuestro ecosistema de capacidades está diseñado para resolver problemas que los asesores de un solo dominio no pueden.' },
+    ecoCenter:    { en: 'Synapxi\nTech', es: 'Synapxi\nTech' },
+
+    // Why Synapxi
+    whyTag:       { en: 'Why Synapxi Tech', es: 'Por qué Synapxi Tech' },
+    whyH2:        { en: 'The Differentiator Is the Combination', es: 'El Diferenciador Es la Combinación' },
+    whySub:       { en: 'Very few advisory firms credibly combine enterprise delivery, AI strategy, product thinking, fintech expertise, data governance, and blockchain & tokenization.', es: 'Muy pocas firmas de asesoría combinan de forma creíble entrega empresarial, estrategia de IA, pensamiento de producto, expertise fintech, gobierno de datos y blockchain & tokenización.' },
+    why1Title:    { en: 'Rare Combination of Expertise', es: 'Combinación Única de Expertise' },
+    why1Desc:     { en: 'Enterprise delivery, AI strategy, product leadership, fintech, data governance, and tokenization — few advisory firms combine all six credibly.', es: 'Entrega empresarial, estrategia de IA, liderazgo de producto, fintech, gobierno de datos y tokenización — pocas firmas de asesoría combinan las seis de forma creíble.' },
+    why2Title:    { en: 'Outcome-Driven Engagement', es: 'Proyecto Orientado a Resultados' },
+    why2Desc:     { en: 'Every engagement is scoped around measurable business outcomes. Success metrics are defined before work begins — and we are accountable to them.', es: 'Cada proyecto se delimita en torno a resultados de negocio medibles. Las métricas de éxito se definen antes de comenzar — y somos responsables de ellas.' },
+    why3Title:    { en: 'Global Reach, Proven in Key Markets', es: 'Alcance Global, Probado en Mercados Clave' },
+    why3Desc:     { en: 'Supporting ambitious organizations globally, with proven experience across Europe and the Americas. Regulatory, cultural, and commercial context built through real engagements.', es: 'Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas. Contexto regulatorio, cultural y comercial construido a través de proyectos reales.' },
+    why4Title:    { en: 'Boutique, Not Body Shop', es: 'Boutique, No Consultoría Masiva' },
+    why4Desc:     { en: 'Premium advisory practice. The senior expertise you evaluate in the conversation is the expertise that works on your engagement — not a junior delivery team.', es: 'Práctica de asesoría premium. El expertise senior que evalúas en la conversación es el que trabaja en tu proyecto — no un equipo de entrega junior.' },
+
+    // Insights
+    insightsTag:  { en: 'Insights', es: 'Publicaciones' },
+    insightsH2:   { en: 'Perspectives on Innovation', es: 'Perspectivas sobre Innovación' },
+    insightsLink: { en: 'All Insights', es: 'Todas las Publicaciones' },
+
+    // CTA
+    ctaTag:       { en: 'Ready to Start?', es: '¿Listo para Comenzar?' },
+    ctaH2:        { en: "Let's Define What's Next for Your Organization", es: 'Definamos el Próximo Paso para tu Organización' },
+    ctaSub:       { en: "Whether you're evaluating an AI strategy, exploring tokenization, or rethinking your product organization — let's start with a conversation.", es: 'Ya sea que estés evaluando una estrategia de IA, explorando la tokenización o replanteando tu organización de producto — comencemos con una conversación.' },
+    ctaBtn1:      { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+    ctaBtn2:      { en: 'About Synapxi Tech', es: 'Sobre Synapxi Tech' },
+    mobileCta:    { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+  },
+
+  // ─── SERVICES ──────────────────────────────────────────────────────────────
+  services: {
+    tag:          { en: 'What We Do', es: 'Qué Hacemos' },
+    h1:           { en: 'Advisory Services', es: 'Servicios de Consultoría' },
+    sub:          { en: 'Five integrated service lines that address the full spectrum of innovation, transformation, and product challenges facing modern organizations.', es: 'Cinco líneas de servicio integradas que abordan todo el espectro de desafíos de innovación, transformación y producto que enfrentan las organizaciones modernas.' },
+    navLabel:     { en: 'Service navigation', es: 'Navegación de servicios' },
+    challenge:    { en: 'The Challenge', es: 'El Desafío' },
+    approach:     { en: 'The Synapxi Approach', es: 'El Enfoque Synapxi' },
+    youReceive:   { en: 'You Receive', es: 'Qué Recibes' },
+    outcomes:     { en: 'Expected Outcomes', es: 'Resultados Esperados' },
+    ctaTag:       { en: 'Start a Conversation', es: 'Inicia una Conversación' },
+    ctaH2:        { en: 'Not Sure Which Service Fits?', es: '¿No Estás Seguro Qué Servicio se Adapta?' },
+    ctaSub:       { en: "Tell us about your challenge and we'll help you determine the right engagement model, scope, and timeline.", es: 'Cuéntanos sobre tu desafío y te ayudaremos a determinar el modelo de compromiso, alcance y cronograma adecuados.' },
+    ctaBtn:       { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+  },
+
+  // ─── CASE STUDIES ──────────────────────────────────────────────────────────
+  caseStudies: {
+    tag:          { en: 'Proven Impact', es: 'Impacto Demostrado' },
+    h1:           { en: 'Case Studies', es: 'Casos de Éxito' },
+    sub:          { en: 'Real engagements. Real outcomes. Across payments, AI, tokenization, and digital transformation — delivered globally.', es: 'Proyectos reales. Resultados reales. En pagos, IA, tokenización y transformación digital — entregados globalmente.' },
+    anonymous:    { en: 'Anonymous', es: 'Anónimo' },
+    challengeL:   { en: 'Challenge', es: 'Desafío' },
+    approachL:    { en: 'Approach', es: 'Enfoque' },
+    roleL:        { en: 'Role', es: 'Rol' },
+    impactL:      { en: 'Business Impact', es: 'Impacto de Negocio' },
+    resultsL:     { en: 'Results', es: 'Resultados' },
+    ndaNote:      { en: 'Specific metrics available under NDA on request', es: 'Métricas específicas disponibles bajo NDA previa solicitud' },
+    ctaTag:       { en: 'Start a Conversation', es: 'Inicia una Conversación' },
+    ctaH2:        { en: 'Ready to Create Your Own Case Study?', es: '¿Listo para Crear tu Propio Caso de Éxito?' },
+    ctaSub:       { en: 'Every engagement starts with a clear understanding of your challenge and what success looks like for your organization.', es: 'Cada proyecto comienza con una comprensión clara de tu desafío y de cómo se ve el éxito para tu organización.' },
+    ctaBtn:       { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+  },
+
+  // ─── ABOUT ─────────────────────────────────────────────────────────────────
+  about: {
+    tag:          { en: 'About Synapxi Tech', es: 'Sobre Synapxi Tech' },
+    h1:           { en: 'Where Enterprise Rigour Meets AI-Era Innovation', es: 'Donde el Rigor Empresarial Se Une con la Innovación de la Era de la IA' },
+    sub:          { en: 'A boutique innovation advisory firm specializing in AI strategy, tokenization and product transformation — for organizations that need more than a strategy deck.', es: 'Una firma boutique de asesoría en innovación especializada en estrategia de IA, tokenización y transformación de producto — para organizaciones que necesitan más que una presentación estratégica.' },
+    whyTag:       { en: 'Why We Exist', es: 'Por Qué Existimos' },
+    whyH2:        { en: 'The Gap Between Strategy Firms and Implementation Firms Is Where Most Organizations Get Stuck', es: 'La Brecha entre Firmas de Estrategia y Firmas de Implementación Es Donde la Mayoría de las Organizaciones se Atascan' },
+    missionTag:   { en: 'Mission', es: 'Misión' },
+    missionBody:  { en: 'Help organizations innovate with confidence, execute with precision, and scale globally — bridging the gap between emerging technology ambition and enterprise-grade delivery.', es: 'Ayudar a las organizaciones a innovar con confianza, ejecutar con precisión y escalar globalmente — cerrando la brecha entre la ambición en tecnología emergente y la entrega de grado empresarial.' },
+    visionTag:    { en: 'Vision', es: 'Visión' },
+    visionBody:   { en: 'Enable organizations to transform emerging technologies — AI, tokenization, decentralized systems — into sustainable competitive advantages that endure beyond the hype cycle.', es: 'Capacitar a las organizaciones para transformar tecnologías emergentes — IA, tokenización, sistemas descentralizados — en ventajas competitivas sostenibles que perduran más allá del ciclo de hype.' },
+    methodTag:    { en: 'How We Work', es: 'Cómo Trabajamos' },
+    methodH2:     { en: 'The Synapxi Methodology', es: 'La Metodología Synapxi' },
+    methodSub:    { en: 'A structured four-stage process that takes organizations from problem definition to measurable scale. Built to close the strategy-execution gap.', es: 'Un proceso estructurado de cuatro etapas que lleva a las organizaciones desde la definición del problema hasta la escala medible. Diseñado para cerrar la brecha estrategia-ejecución.' },
+    step1Title:   { en: 'Discover', es: 'Descubrir' },
+    step1Desc:    { en: 'Deep immersion in your organization, market, and technology landscape. We understand the real problem before we propose anything.', es: 'Inmersión profunda en tu organización, mercado y panorama tecnológico. Entendemos el problema real antes de proponer nada.' },
+    step2Title:   { en: 'Design', es: 'Diseñar' },
+    step2Desc:    { en: 'We co-design the strategy, architecture and operating model — with measurable outcomes defined upfront and stakeholders aligned from the start.', es: 'Co-diseñamos la estrategia, arquitectura y modelo operativo — con resultados medibles definidos desde el inicio y stakeholders alineados desde el principio.' },
+    step3Title:   { en: 'Deliver', es: 'Entregar' },
+    step3Desc:    { en: 'We embed alongside your teams and deliver — not as consultants handing over reports, but as accountable practitioners driving measurable progress.', es: 'Nos integramos junto a tus equipos y entregamos — no como consultores entregando informes, sino como profesionales responsables impulsando un progreso medible.' },
+    step4Title:   { en: 'Scale', es: 'Escalar' },
+    step4Desc:    { en: 'We design for scale from day one. Knowledge transfer, capability building, and architecture decisions that enable your organization to grow independently.', es: 'Diseñamos para escalar desde el primer día. Transferencia de conocimiento, desarrollo de capacidades y decisiones de arquitectura que permiten a tu organización crecer de forma independiente.' },
+    expertiseTag: { en: 'Expertise', es: 'Expertise' },
+    expertiseH2:  { en: 'Areas of Expertise', es: 'Áreas de Expertise' },
+    industriesTag:{ en: 'Industries', es: 'Industrias' },
+    industriesH2: { en: 'Industry Experience', es: 'Experiencia por Industria' },
+    industriesSub:{ en: 'Our advisory work spans a range of industries, with particular depth in financial services, payments, and technology. Cross-industry experience gives us pattern recognition that specialists cannot.', es: 'Nuestro trabajo de asesoría abarca una variedad de industrias, con particular profundidad en servicios financieros, pagos y tecnología. La experiencia multisectorial nos da un reconocimiento de patrones que los especialistas no tienen.' },
+    geoTag:       { en: 'Geography', es: 'Geografía' },
+    geoH2:        { en: 'Global Experience', es: 'Experiencia Global' },
+    chooseTag:    { en: 'Why Synapxi Tech', es: 'Por Qué Synapxi Tech' },
+    chooseH2:     { en: 'Why Organizations Choose Synapxi Tech', es: 'Por Qué las Organizaciones Eligen Synapxi Tech' },
+    ctaTag:       { en: 'Work With Us', es: 'Trabaja Con Nosotros' },
+    ctaH2:        { en: "Let's Explore Whether We're the Right Fit", es: 'Exploremos si Somos el Socio Adecuado' },
+    ctaSub:       { en: "We are selective about the engagements we take on because we are committed to delivering real outcomes — not filling a pipeline. If your challenge is significant, let's talk.", es: 'Somos selectivos con los proyectos que aceptamos porque estamos comprometidos a entregar resultados reales — no a llenar un pipeline. Si tu desafío es significativo, hablemos.' },
+    ctaBtn:       { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+  },
+
+  // ─── INSIGHTS ──────────────────────────────────────────────────────────────
+  insights: {
+    tag:          { en: 'Perspectives', es: 'Perspectivas' },
+    h1:           { en: 'Insights', es: 'Publicaciones' },
+    sub:          { en: 'Perspectives on AI, Web3, payments, product strategy, and digital transformation from practitioners who work at the frontier.', es: 'Perspectivas sobre IA, Web3, pagos, estrategia de producto y transformación digital de profesionales que trabajan en la vanguardia.' },
+    substack:     { en: 'Subscribe on Substack →', es: 'Suscríbete en Substack →' },
+    featured:     { en: 'Featured', es: 'Destacado' },
+    readArticle:  { en: 'Read Article →', es: 'Leer Artículo →' },
+    ctaTag:       { en: 'Stay Informed', es: 'Mantente Informado' },
+    ctaH2:        { en: 'Get Insights Delivered', es: 'Recibe Publicaciones' },
+    ctaSub:       { en: 'Subscribe to our Substack for perspectives on AI, Web3, payments, and digital transformation — written for practitioners and decision-makers.', es: 'Suscríbete a nuestro Substack para recibir perspectivas sobre IA, Web3, pagos y transformación digital — escritas para profesionales y tomadores de decisiones.' },
+    ctaBtn:       { en: 'Subscribe on Substack', es: 'Suscribirse en Substack' },
+    backLink:     { en: '← Back to Insights', es: '← Volver a Publicaciones' },
+    readTime:     { en: 'min read', es: 'min de lectura' },
+    articleCta:   { en: 'Start a Conversation', es: 'Inicia una Conversación' },
+  },
+
+  // ─── CONTACT ───────────────────────────────────────────────────────────────
+  contact: {
+    tag:          { en: 'Get in Touch', es: 'Ponte en Contacto' },
+    h1:           { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
+    sub:          { en: "Tell us about your challenge. We'll review your submission and reach out within 2 business days to explore whether we're the right fit.", es: 'Cuéntanos sobre tu desafío. Revisaremos tu solicitud y nos pondremos en contacto en 2 días hábiles para explorar si somos el socio adecuado.' },
+    nextH2:       { en: 'What Happens Next', es: 'Qué Sucede Después' },
+    next1:        { en: 'We review your submission within 2 business days.', es: 'Revisamos tu solicitud en 2 días hábiles.' },
+    next2:        { en: "If there's a potential fit, we schedule a 30-minute discovery call.", es: 'Si hay un encaje potencial, programamos una llamada de descubrimiento de 30 minutos.' },
+    next3:        { en: 'We scope a proposal aligned to your specific challenge and budget.', es: 'Definimos una propuesta alineada a tu desafío específico y presupuesto.' },
+    sizesH2:      { en: 'Typical Engagement Sizes', es: 'Tamaños de Proyecto Típicos' },
+    basedH2:      { en: 'Based in Madrid', es: 'Con Base en Madrid' },
+    basedBody:    { en: 'Headquartered in Madrid, Spain. Supporting ambitious organizations globally, with proven experience across Europe and the Americas.', es: 'Con sede en Madrid, España. Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas.' },
+    formH2:       { en: 'Tell Us About Your Challenge', es: 'Cuéntanos Sobre tu Desafío' },
+    fName:        { en: 'Full Name', es: 'Nombre Completo' },
+    fNameP:       { en: 'Your name', es: 'Tu nombre' },
+    fCompany:     { en: 'Company', es: 'Empresa' },
+    fCompanyP:    { en: 'Your company', es: 'Tu empresa' },
+    fEmail:       { en: 'Work Email', es: 'Email de Trabajo' },
+    fEmailP:      { en: 'you@company.com', es: 'tu@empresa.com' },
+    fIndustry:    { en: 'Industry', es: 'Industria' },
+    fIndustryP:   { en: 'Select industry', es: 'Selecciona industria' },
+    fBudget:      { en: 'Budget Range', es: 'Rango de Presupuesto' },
+    fBudgetP:     { en: 'Select range', es: 'Selecciona rango' },
+    fTimeline:    { en: 'Timeline', es: 'Cronograma' },
+    fTimelineP:   { en: 'Select timeline', es: 'Selecciona cronograma' },
+    fChallenge:   { en: 'Describe Your Challenge', es: 'Describe tu Desafío' },
+    fChallengeP:  { en: 'What are you trying to solve or achieve? The more context you provide, the more useful our response will be.', es: '¿Qué intentas resolver o lograr? Cuanto más contexto nos des, más útil será nuestra respuesta.' },
+    fPrivacy:     { en: 'Your information is used solely to evaluate your inquiry and will never be sold or shared.', es: 'Tu información se usa únicamente para evaluar tu consulta y nunca será vendida ni compartida.' },
+    fSubmit:      { en: 'Submit Inquiry', es: 'Enviar Consulta' },
+    fSending:     { en: 'Sending…', es: 'Enviando…' },
+    fError:       { en: 'Something went wrong. Please try again or reach out directly.', es: 'Algo salió mal. Por favor intenta de nuevo o contáctanos directamente.' },
+    successH2:    { en: 'Thank You', es: 'Gracias' },
+    successSub:   { en: "We've received your submission and will review it within 2 business days.", es: 'Hemos recibido tu solicitud y la revisaremos en 2 días hábiles.' },
+    successCalP:  { en: 'Want to move faster? Book a 30-minute discovery call directly:', es: '¿Quieres avanzar más rápido? Reserva una llamada de descubrimiento de 30 minutos directamente:' },
+    successCalBtn:{ en: 'Book Discovery Call →', es: 'Reservar Llamada de Descubrimiento →' },
+  },
+
+  // ─── FOOTER ────────────────────────────────────────────────────────────────
+  footer: {
+    tagline:      { en: 'Innovate. Disrupt. Globalize.', es: 'Innova. Disrumpe. Globaliza.' },
+    desc:         { en: 'Boutique innovation advisory for AI, tokenization, product strategy and digital transformation. Supporting ambitious organizations globally, with proven experience across Europe and the Americas.', es: 'Asesoría boutique en innovación para IA, tokenización, estrategia de producto y transformación digital. Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas.' },
+    navTitle:     { en: 'Navigation', es: 'Navegación' },
+    servicesTitle:{ en: 'Services', es: 'Servicios' },
+    privacy:      { en: 'Privacy Policy', es: 'Política de Privacidad' },
+    terms:        { en: 'Terms of Service', es: 'Términos de Servicio' },
+    rights:       { en: 'All rights reserved.', es: 'Todos los derechos reservados.' },
+  },
+
+  // ─── 404 ───────────────────────────────────────────────────────────────────
+  notFound: {
+    label:        { en: '404', es: '404' },
+    h1:           { en: 'Page Not Found', es: 'Página No Encontrada' },
+    sub:          { en: 'The page you are looking for does not exist or has been moved.', es: 'La página que buscas no existe o ha sido movida.' },
+    home:         { en: 'Back to Home', es: 'Volver al Inicio' },
+    contact:      { en: 'Contact Us', es: 'Contáctanos' },
+  },
+} as const
+
+export type TranslationKey = keyof typeof translations
