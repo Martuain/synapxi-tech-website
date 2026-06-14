@@ -15,12 +15,12 @@ export const translations = {
   // ─── HOME ──────────────────────────────────────────────────────────────────
   home: {
     // Hero
-    heroTagline:  { en: 'AI-First Advisory · Europe & Americas', es: 'Asesoría AI-First · Europa & Américas' },
+    heroTagline:  { en: 'AI-First Innovation Advisory', es: 'Asesoría de Innovación AI-First' },
     heroDiff:     { en: 'Enterprise-grade delivery experience combined with emerging technology strategy.', es: 'Experiencia de entrega empresarial combinada con estrategia de tecnología emergente.' },
     heroH1a:      { en: 'Innovate.', es: 'Innova.' },
     heroH1b:      { en: 'Disrupt.', es: 'Disrumpe.' },
     heroH1c:      { en: 'Globalize.', es: 'Globaliza.' },
-    heroSub:      { en: 'We help organizations turn AI, tokenization and product innovation into sustainable competitive advantage — combining enterprise delivery discipline with frontier technology strategy.', es: 'Ayudamos a las organizaciones a convertir la IA, la tokenización y la innovación de producto en ventajas competitivas sostenibles — combinando disciplina de entrega empresarial con estrategia de tecnología de vanguardia.' },
+    heroSub:      { en: 'We help organizations turn AI strategy, tokenization and product innovation into sustainable competitive advantage — combining enterprise delivery discipline with frontier technology expertise.', es: 'Ayudamos a las organizaciones a convertir la estrategia de IA, la tokenización y la innovación de producto en ventajas competitivas sostenibles — combinando disciplina de entrega empresarial con expertise en tecnología de vanguardia.' },
     heroCta1:     { en: 'Start Your Project', es: 'Inicia tu Proyecto' },
     heroCta2:     { en: 'Explore Case Studies', es: 'Ver Casos de Éxito' },
     scrollCue:    { en: 'Scroll', es: 'Scroll' },
@@ -28,7 +28,7 @@ export const translations = {
     // Proven Outcomes
     provenTag:    { en: 'Proven Outcomes', es: 'Resultados Demostrados' },
     provenH2:     { en: 'Results That Speak Without Naming Names', es: 'Resultados que Hablan Sin Nombrar Nombres' },
-    provenSub:    { en: 'Across financial services, AI, payments, tokenization and enterprise transformation — in Europe and the Americas.', es: 'En servicios financieros, IA, pagos, tokenización y transformación empresarial — en Europa y las Américas.' },
+    provenSub:    { en: 'Across financial services, AI, payments, tokenization and enterprise transformation — in Europe, the Americas, and beyond.', es: 'En servicios financieros, IA, pagos, tokenización y transformación empresarial — en Europa, las Américas y más allá.' },
     proven1Val:   { en: '50,000', es: '50.000' },
     proven1Lab:   { en: 'TPS — Payment infrastructure scaled', es: 'TPS — Infraestructura de pagos escalada' },
     proven2Val:   { en: '2.5M+', es: '2,5M+' },
@@ -45,7 +45,7 @@ export const translations = {
     // Services
     servicesTag:  { en: 'What We Do', es: 'Qué Hacemos' },
     servicesH2:   { en: 'Advisory Services', es: 'Servicios de Consultoría' },
-    servicesSub:  { en: 'Enterprise delivery experience meets frontier technology strategy. We work across AI, Web3, payments, product and transformation — credibly, not as a generalist.', es: 'La experiencia de entrega empresarial se une con la estrategia de tecnología de vanguardia. Trabajamos en IA, Web3, pagos, producto y transformación — con credibilidad, no como generalistas.' },
+    servicesSub:  { en: 'AI strategy is our primary focus. We also bring deep expertise in Web3, payments, product leadership and transformation — credibly combined, not as a generalist.', es: 'La estrategia de IA es nuestro enfoque principal. También aportamos expertise profundo en Web3, pagos, liderazgo de producto y transformación — combinados de forma creíble, no como generalistas.' },
     servicesLink: { en: 'View All Services', es: 'Ver Todos los Servicios' },
     serviceLearn: { en: 'Learn more', es: 'Saber más' },
 
@@ -73,8 +73,8 @@ export const translations = {
     why1Desc:     { en: 'Enterprise delivery, AI strategy, product leadership, fintech, data governance, and tokenization — few advisory firms combine all six credibly.', es: 'Entrega empresarial, estrategia de IA, liderazgo de producto, fintech, gobierno de datos y tokenización — pocas firmas de asesoría combinan las seis de forma creíble.' },
     why2Title:    { en: 'Outcome-Driven Engagement', es: 'Proyecto Orientado a Resultados' },
     why2Desc:     { en: 'Every engagement is scoped around measurable business outcomes. Success metrics are defined before work begins — and we are accountable to them.', es: 'Cada proyecto se delimita en torno a resultados de negocio medibles. Las métricas de éxito se definen antes de comenzar — y somos responsables de ellas.' },
-    why3Title:    { en: 'Europe & Americas Coverage', es: 'Cobertura Europa & Américas' },
-    why3Desc:     { en: 'Deep market knowledge across Spain, the UK, the EU and Latin America. Regulatory, cultural, and commercial context that global generalists miss.', es: 'Profundo conocimiento de mercado en España, el Reino Unido, la UE y América Latina. Contexto regulatorio, cultural y comercial que los generalistas globales no tienen.' },
+    why3Title:    { en: 'Global Reach, Proven in Key Markets', es: 'Alcance Global, Probado en Mercados Clave' },
+    why3Desc:     { en: 'Supporting ambitious organizations globally, with proven experience across Europe and the Americas. Regulatory, cultural, and commercial context built through real engagements.', es: 'Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas. Contexto regulatorio, cultural y comercial construido a través de proyectos reales.' },
     why4Title:    { en: 'Boutique, Not Body Shop', es: 'Boutique, No Consultoría Masiva' },
     why4Desc:     { en: 'Premium advisory practice. The senior expertise you evaluate in the conversation is the expertise that works on your engagement — not a junior delivery team.', es: 'Práctica de asesoría premium. El expertise senior que evalúas en la conversación es el que trabaja en tu proyecto — no un equipo de entrega junior.' },
 
@@ -112,7 +112,7 @@ export const translations = {
   caseStudies: {
     tag:          { en: 'Proven Impact', es: 'Impacto Demostrado' },
     h1:           { en: 'Case Studies', es: 'Casos de Éxito' },
-    sub:          { en: 'Real engagements. Real outcomes. Across payments, AI, tokenization, and digital transformation — in Europe and the Americas.', es: 'Proyectos reales. Resultados reales. En pagos, IA, tokenización y transformación digital — en Europa y las Américas.' },
+    sub:          { en: 'Real engagements. Real outcomes. Across payments, AI, tokenization, and digital transformation — delivered globally.', es: 'Proyectos reales. Resultados reales. En pagos, IA, tokenización y transformación digital — entregados globalmente.' },
     anonymous:    { en: 'Anonymous', es: 'Anónimo' },
     challengeL:   { en: 'Challenge', es: 'Desafío' },
     approachL:    { en: 'Approach', es: 'Enfoque' },
@@ -129,8 +129,8 @@ export const translations = {
   // ─── ABOUT ─────────────────────────────────────────────────────────────────
   about: {
     tag:          { en: 'About Synapxi Tech', es: 'Sobre Synapxi Tech' },
-    h1:           { en: 'Where Enterprise Rigour Meets Frontier Innovation', es: 'Donde el Rigor Empresarial Se Une con la Innovación de Vanguardia' },
-    sub:          { en: 'A boutique innovation advisory firm for organizations that need more than a strategy deck — they need a partner who can design and deliver.', es: 'Una firma boutique de asesoría en innovación para organizaciones que necesitan más que una presentación estratégica — necesitan un socio que pueda diseñar y entregar.' },
+    h1:           { en: 'Where Enterprise Rigour Meets AI-Era Innovation', es: 'Donde el Rigor Empresarial Se Une con la Innovación de la Era de la IA' },
+    sub:          { en: 'A boutique innovation advisory firm specializing in AI strategy, tokenization and product transformation — for organizations that need more than a strategy deck.', es: 'Una firma boutique de asesoría en innovación especializada en estrategia de IA, tokenización y transformación de producto — para organizaciones que necesitan más que una presentación estratégica.' },
     whyTag:       { en: 'Why We Exist', es: 'Por Qué Existimos' },
     whyH2:        { en: 'The Gap Between Strategy Firms and Implementation Firms Is Where Most Organizations Get Stuck', es: 'La Brecha entre Firmas de Estrategia y Firmas de Implementación Es Donde la Mayoría de las Organizaciones se Atascan' },
     missionTag:   { en: 'Mission', es: 'Misión' },
@@ -191,7 +191,7 @@ export const translations = {
     next3:        { en: 'We scope a proposal aligned to your specific challenge and budget.', es: 'Definimos una propuesta alineada a tu desafío específico y presupuesto.' },
     sizesH2:      { en: 'Typical Engagement Sizes', es: 'Tamaños de Proyecto Típicos' },
     basedH2:      { en: 'Based in Madrid', es: 'Con Base en Madrid' },
-    basedBody:    { en: 'Headquartered in Madrid, Spain. Supporting organizations across Europe and the Americas.', es: 'Con sede en Madrid, España. Apoyamos a organizaciones en Europa y las Américas.' },
+    basedBody:    { en: 'Headquartered in Madrid, Spain. Supporting ambitious organizations globally, with proven experience across Europe and the Americas.', es: 'Con sede en Madrid, España. Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas.' },
     formH2:       { en: 'Tell Us About Your Challenge', es: 'Cuéntanos Sobre tu Desafío' },
     fName:        { en: 'Full Name', es: 'Nombre Completo' },
     fNameP:       { en: 'Your name', es: 'Tu nombre' },
@@ -220,7 +220,7 @@ export const translations = {
   // ─── FOOTER ────────────────────────────────────────────────────────────────
   footer: {
     tagline:      { en: 'Innovate. Disrupt. Globalize.', es: 'Innova. Disrumpe. Globaliza.' },
-    desc:         { en: 'Boutique innovation advisory for AI, tokenization, product strategy and digital transformation. Supporting organizations across Europe and the Americas.', es: 'Asesoría boutique en innovación para IA, tokenización, estrategia de producto y transformación digital. Apoyamos a organizaciones en Europa y las Américas.' },
+    desc:         { en: 'Boutique innovation advisory for AI, tokenization, product strategy and digital transformation. Supporting ambitious organizations globally, with proven experience across Europe and the Americas.', es: 'Asesoría boutique en innovación para IA, tokenización, estrategia de producto y transformación digital. Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas.' },
     navTitle:     { en: 'Navigation', es: 'Navegación' },
     servicesTitle:{ en: 'Services', es: 'Servicios' },
     privacy:      { en: 'Privacy Policy', es: 'Política de Privacidad' },

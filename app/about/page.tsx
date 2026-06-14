@@ -25,16 +25,18 @@ const industriesEn = ['Financial Services','Banking','Payments & Fintech','Cyber
 const industriesEs = ['Servicios Financieros','Banca','Pagos & Fintech','Ciberseguridad','Inmobiliaria','Tecnología Empresarial','Medios & Entretenimiento','Energía & Utilities']
 
 const regionsEn = [
-  { name: 'Spain',         description: 'Headquartered in Madrid. Deep roots in the Spanish market and Southern European ecosystem, including regulatory and commercial context.' },
-  { name: 'United Kingdom',description: 'Active in the UK fintech and financial services market. Experience with FCA-regulated environments and UK-EU cross-border dynamics post-Brexit.' },
-  { name: 'Europe',        description: 'Cross-border project experience across the EU. Regulatory knowledge spanning MiCA, PSD2, DORA, GDPR, and ECB digital asset initiatives.' },
-  { name: 'Americas',      description: 'Delivery experience in Latin America and North America. Fintech ecosystems across Mexico, Colombia, Brazil, and the USA.' },
+  { name: 'Spain',          description: 'Headquartered in Madrid. Deep roots in the Spanish market and Southern European ecosystem, including regulatory and commercial context.' },
+  { name: 'United Kingdom', description: 'Active in the UK fintech and financial services market. Experience with FCA-regulated environments and UK-EU cross-border dynamics post-Brexit.' },
+  { name: 'Europe',         description: 'Cross-border project experience across the EU. Regulatory knowledge spanning MiCA, PSD2, DORA, GDPR, and ECB digital asset initiatives.' },
+  { name: 'Americas',       description: 'Delivery experience in Latin America and North America. Fintech ecosystems across Mexico, Colombia, Brazil, and the USA.' },
+  { name: 'Global',         description: 'Supporting ambitious organizations globally. Our proven experience is concentrated in Europe and the Americas — and we work wherever the right challenge takes us.' },
 ]
 const regionsEs = [
-  { name: 'España',        description: 'Con sede en Madrid. Profundas raíces en el mercado español y el ecosistema del sur de Europa, incluyendo contexto regulatorio y comercial.' },
-  { name: 'Reino Unido',   description: 'Activos en el mercado fintech y de servicios financieros del Reino Unido. Experiencia con entornos regulados por la FCA y dinámicas transfronterizas UE-RU post-Brexit.' },
-  { name: 'Europa',        description: 'Experiencia en proyectos transfronterizos en la UE. Conocimiento regulatorio que abarca MiCA, PSD2, DORA, GDPR e iniciativas de activos digitales del BCE.' },
-  { name: 'Américas',      description: 'Experiencia de entrega en América Latina y América del Norte. Ecosistemas fintech en México, Colombia, Brasil y EE.UU.' },
+  { name: 'España',         description: 'Con sede en Madrid. Profundas raíces en el mercado español y el ecosistema del sur de Europa, incluyendo contexto regulatorio y comercial.' },
+  { name: 'Reino Unido',    description: 'Activos en el mercado fintech y de servicios financieros del Reino Unido. Experiencia con entornos regulados por la FCA y dinámicas transfronterizas UE-RU post-Brexit.' },
+  { name: 'Europa',         description: 'Experiencia en proyectos transfronterizos en la UE. Conocimiento regulatorio que abarca MiCA, PSD2, DORA, GDPR e iniciativas de activos digitales del BCE.' },
+  { name: 'Américas',       description: 'Experiencia de entrega en América Latina y América del Norte. Ecosistemas fintech en México, Colombia, Brasil y EE.UU.' },
+  { name: 'Global',         description: 'Apoyamos a organizaciones ambiciosas a nivel global. Nuestra experiencia demostrada está concentrada en Europa y las Américas — y trabajamos donde el desafío correcto nos lleve.' },
 ]
 
 const chooseEn = [
@@ -53,14 +55,14 @@ const chooseEs = [
 ]
 
 const whyBodyEn = [
-  'There are two types of consulting firms. Strategy firms that produce excellent frameworks and leave. Implementation firms that execute what they\'re told without challenging the direction. Most organizations need something in between — and almost nobody offers it credibly.',
-  'Synapxi Tech was built to close that gap. We bring the intellectual rigour of a strategy firm and the delivery accountability of a practitioner. We challenge the direction when it needs challenging, and we stay through delivery when it matters.',
-  'We focus on the problems where the intersection of domains creates the most value — AI initiatives that need data governance before they can scale, tokenization strategies that need product thinking before they can go to market, digital transformations that need delivery redesign before the strategy makes sense.',
+  'The AI era has created a new category of strategic problem. Organizations need to move fast on AI, tokenization, and digital transformation — but the firms equipped to advise on strategy are rarely equipped to deliver, and the firms equipped to deliver rarely challenge the strategy. Most organizations get stuck in between.',
+  'Synapxi Tech was built to close that gap. We bring the intellectual rigour of a strategy firm and the delivery accountability of a practitioner. We challenge the direction when it needs challenging — especially on AI initiatives where the wrong strategy compounds quickly — and we stay through delivery when it matters.',
+  'We focus on the problems where the intersection of domains creates the most value: AI initiatives that need data governance before they can scale, tokenization strategies that need product thinking before they can go to market, and digital transformations that need delivery redesign before the strategy makes sense.',
 ]
 const whyBodyEs = [
-  'Hay dos tipos de firmas de consultoría. Firmas de estrategia que producen excelentes frameworks y se van. Firmas de implementación que ejecutan lo que se les dice sin cuestionar la dirección. La mayoría de las organizaciones necesitan algo intermedio — y casi nadie lo ofrece de forma creíble.',
-  'Synapxi Tech fue creada para cerrar esa brecha. Aportamos el rigor intelectual de una firma de estrategia y la responsabilidad de entrega de un profesional. Cuestionamos la dirección cuando es necesario, y permanecemos durante la entrega cuando importa.',
-  'Nos centramos en los problemas donde la intersección de dominios crea el mayor valor — iniciativas de IA que necesitan gobierno de datos antes de poder escalar, estrategias de tokenización que necesitan pensamiento de producto antes de salir al mercado, transformaciones digitales que necesitan rediseño de entrega antes de que la estrategia tenga sentido.',
+  'La era de la IA ha creado una nueva categoría de problema estratégico. Las organizaciones necesitan moverse rápido en IA, tokenización y transformación digital — pero las firmas capaces de asesorar en estrategia rara vez están equipadas para entregar, y las firmas capaces de entregar rara vez cuestionan la estrategia. La mayoría de las organizaciones se quedan atascadas entre ambas.',
+  'Synapxi Tech fue creada para cerrar esa brecha. Aportamos el rigor intelectual de una firma de estrategia y la responsabilidad de entrega de un profesional. Cuestionamos la dirección cuando es necesario — especialmente en iniciativas de IA donde la estrategia incorrecta se amplifica rápidamente — y permanecemos durante la entrega cuando importa.',
+  'Nos centramos en los problemas donde la intersección de dominios crea el mayor valor: iniciativas de IA que necesitan gobierno de datos antes de poder escalar, estrategias de tokenización que necesitan pensamiento de producto antes de salir al mercado, y transformaciones digitales que necesitan rediseño de entrega antes de que la estrategia tenga sentido.',
 ]
 
 export default function AboutPage() {
@@ -229,7 +231,7 @@ export default function AboutPage() {
             <span className="section-tag">{t('about','geoTag')}</span>
             <h2 className="font-display text-4xl font-bold text-white mb-12">{t('about','geoH2')}</h2>
           </ScrollReveal>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
             {regions.map((region, i) => (
               <ScrollReveal key={region.name} delay={i * 0.08}>
                 <div className="card-dark p-6 h-full">
