@@ -5,73 +5,62 @@ import ScrollReveal from '@/components/ScrollReveal'
 import { useLang } from '@/context/LangContext'
 
 const expertiseEn = [
-  { title: 'AI Strategy & Adoption',     description: 'From maturity assessment to enterprise deployment, including model governance and organizational design for AI.' },
-  { title: 'Web3 & Tokenization',        description: 'Token economics, smart contract strategy, decentralized finance structures, and institutional-grade blockchain implementations.' },
-  { title: 'Product Strategy',           description: 'Product vision, roadmap design, discovery frameworks, and operating model design for product organizations.' },
-  { title: 'Payments & Fintech',         description: 'Deep expertise across payment infrastructure, open banking, embedded finance, and cross-border payment systems.' },
-  { title: 'Data Governance',            description: 'Data architecture, quality frameworks, regulatory compliance, and AI data readiness assessments.' },
-  { title: 'Digital Transformation',     description: 'Enterprise transformation strategy, delivery modernization, and change management for complex organizations.' },
+  { title: 'AI Strategy & Adoption',    description: 'From AI maturity assessment to enterprise-wide deployment — model governance, organizational design, and adoption frameworks that actually get used.' },
+  { title: 'Web3 & Tokenization',       description: 'Token economics, smart contract strategy, decentralized finance structures, and institutional-grade blockchain implementations — without the hype.' },
+  { title: 'Product Strategy',          description: 'Product vision, roadmap design, discovery frameworks, and operating model design for product organizations that need to move faster and smarter.' },
+  { title: 'Payments & Fintech',        description: 'Deep expertise across payment infrastructure, open banking, embedded finance, cross-border rails, and ISO 20022 migration.' },
+  { title: 'Data Governance',           description: 'Data architecture, quality frameworks, regulatory compliance, and AI data readiness — the unglamorous foundation of every successful AI initiative.' },
+  { title: 'Digital Transformation',    description: 'Enterprise transformation strategy, delivery modernization, team topology design, and change management for complex, multi-geography organizations.' },
 ]
 const expertiseEs = [
-  { title: 'Estrategia de IA & Adopción',       description: 'Desde evaluación de madurez hasta despliegue empresarial, incluyendo gobierno de modelos y diseño organizacional para IA.' },
-  { title: 'Web3 & Tokenización',               description: 'Economía de tokens, estrategia de contratos inteligentes, estructuras DeFi e implementaciones blockchain de grado institucional.' },
-  { title: 'Estrategia de Producto',            description: 'Visión de producto, diseño de hoja de ruta, frameworks de descubrimiento y diseño del modelo operativo para organizaciones de producto.' },
-  { title: 'Pagos & Fintech',                   description: 'Expertise profundo en infraestructura de pagos, open banking, finanzas embebidas y sistemas de pago transfronterizos.' },
-  { title: 'Gobierno de Datos',                 description: 'Arquitectura de datos, frameworks de calidad, cumplimiento regulatorio y evaluaciones de preparación de datos para IA.' },
-  { title: 'Transformación Digital',            description: 'Estrategia de transformación empresarial, modernización de entrega y gestión del cambio para organizaciones complejas.' },
+  { title: 'Estrategia de IA & Adopción',      description: 'Desde la evaluación de madurez de IA hasta el despliegue empresarial — gobierno de modelos, diseño organizacional y frameworks de adopción que realmente se usan.' },
+  { title: 'Web3 & Tokenización',              description: 'Economía de tokens, estrategia de contratos inteligentes, estructuras DeFi e implementaciones blockchain de grado institucional — sin el hype.' },
+  { title: 'Estrategia de Producto',           description: 'Visión de producto, diseño de hoja de ruta, frameworks de discovery y diseño del modelo operativo para organizaciones que necesitan moverse más rápido e inteligente.' },
+  { title: 'Pagos & Fintech',                  description: 'Expertise profundo en infraestructura de pagos, open banking, finanzas embebidas, rieles transfronterizos y migración ISO 20022.' },
+  { title: 'Gobierno de Datos',                description: 'Arquitectura de datos, frameworks de calidad, cumplimiento regulatorio y preparación de datos para IA — la base poco glamorosa de toda iniciativa de IA exitosa.' },
+  { title: 'Transformación Digital',           description: 'Estrategia de transformación empresarial, modernización de entrega, diseño de topología de equipos y gestión del cambio para organizaciones complejas y multigeo.' },
 ]
 
 const industriesEn = ['Financial Services','Banking','Payments & Fintech','Cybersecurity','Real Estate','Enterprise Technology','Media & Entertainment','Energy & Utilities']
 const industriesEs = ['Servicios Financieros','Banca','Pagos & Fintech','Ciberseguridad','Inmobiliaria','Tecnología Empresarial','Medios & Entretenimiento','Energía & Utilities']
 
 const regionsEn = [
-  { name: 'Spain',         description: 'Headquartered in Madrid, with deep roots in the Spanish market and access to the broader Southern European ecosystem.' },
-  { name: 'United Kingdom',description: 'Active presence in the UK fintech and financial services market, including experience with FCA-regulated environments.' },
-  { name: 'Europe',        description: 'Cross-border project experience across the EU, with regulatory knowledge spanning MiCA, PSD2, DORA, and GDPR.' },
-  { name: 'Americas',      description: 'Delivery experience across Latin America and North America, including fintech ecosystems in Mexico, Brazil, Colombia, and the USA.' },
+  { name: 'Spain',         description: 'Headquartered in Madrid. Deep roots in the Spanish market and Southern European ecosystem, including regulatory and commercial context.' },
+  { name: 'United Kingdom',description: 'Active in the UK fintech and financial services market. Experience with FCA-regulated environments and UK-EU cross-border dynamics post-Brexit.' },
+  { name: 'Europe',        description: 'Cross-border project experience across the EU. Regulatory knowledge spanning MiCA, PSD2, DORA, GDPR, and ECB digital asset initiatives.' },
+  { name: 'Americas',      description: 'Delivery experience in Latin America and North America. Fintech ecosystems across Mexico, Colombia, Brazil, and the USA.' },
 ]
 const regionsEs = [
-  { name: 'España',        description: 'Con sede en Madrid, con profundas raíces en el mercado español y acceso al ecosistema más amplio del sur de Europa.' },
-  { name: 'Reino Unido',   description: 'Presencia activa en el mercado fintech y de servicios financieros del Reino Unido, incluyendo experiencia en entornos regulados por la FCA.' },
-  { name: 'Europa',        description: 'Experiencia en proyectos transfronterizos en la UE, con conocimiento regulatorio que abarca MiCA, PSD2, DORA y GDPR.' },
-  { name: 'Américas',      description: 'Experiencia de entrega en América Latina y América del Norte, incluyendo ecosistemas fintech en México, Brasil, Colombia y EE.UU.' },
+  { name: 'España',        description: 'Con sede en Madrid. Profundas raíces en el mercado español y el ecosistema del sur de Europa, incluyendo contexto regulatorio y comercial.' },
+  { name: 'Reino Unido',   description: 'Activos en el mercado fintech y de servicios financieros del Reino Unido. Experiencia con entornos regulados por la FCA y dinámicas transfronterizas UE-RU post-Brexit.' },
+  { name: 'Europa',        description: 'Experiencia en proyectos transfronterizos en la UE. Conocimiento regulatorio que abarca MiCA, PSD2, DORA, GDPR e iniciativas de activos digitales del BCE.' },
+  { name: 'Américas',      description: 'Experiencia de entrega en América Latina y América del Norte. Ecosistemas fintech en México, Colombia, Brasil y EE.UU.' },
 ]
 
 const chooseEn = [
-  { title: 'The Combination No One Else Offers',     description: 'Enterprise delivery experience, product strategy, fintech expertise, data governance, AI adoption, and blockchain & tokenization — credibly combined in a single advisory relationship.' },
-  { title: 'Outcomes First, Always',                 description: 'Every engagement is scoped around measurable business outcomes. We define what success looks like before work begins, and we are accountable to it.' },
-  { title: 'Senior Expertise on Your Engagement',    description: 'We operate as a boutique advisory firm. The expertise you evaluate in the conversation is the expertise you get on the engagement — not junior delivery teams.' },
-  { title: 'Cross-Industry, Cross-Border Perspective',description: 'Having worked across banking, fintech, cybersecurity, real estate, and enterprise technology — and across Europe and the Americas — we bring pattern recognition most single-industry advisors cannot.' },
-  { title: 'Built for Ambitious Organizations',      description: 'We work best with organizations that are serious about transformation — scaleups scaling fast, mid-market companies modernizing, and enterprise innovation teams that need a partner who can operate at their level.' },
+  { title: 'The Combination That Doesn\'t Exist Elsewhere',    description: 'Enterprise delivery discipline, AI strategy, product leadership, fintech expertise, data governance, and blockchain & tokenization — credibly combined in a single advisory relationship. Most firms own one of these. We own the intersection.' },
+  { title: 'Strategy Firms Advise. We Deliver.',               description: 'The gap between strategy and execution is where most organizations get stuck. We are structured to close that gap — with practitioners who have built and shipped products, not consultants who have observed them.' },
+  { title: 'Outcomes Defined Before Work Begins',              description: 'Every engagement is scoped around measurable business outcomes agreed upfront. We define what success looks like before the first invoice — and we are accountable to those definitions.' },
+  { title: 'Senior Expertise, Not a Delivery Team',            description: 'We operate as a boutique advisory firm. The expertise you evaluate in the conversation is the expertise that works on your engagement. Not a junior team managed from a distance.' },
+  { title: 'Cross-Border Pattern Recognition',                 description: 'Having operated across banking, fintech, cybersecurity, real estate, and enterprise technology — in Spain, the UK, the EU, and Latin America — we bring pattern recognition that single-market, single-domain advisors simply cannot offer.' },
 ]
 const chooseEs = [
-  { title: 'La Combinación que Nadie Más Ofrece',         description: 'Experiencia en entrega empresarial, estrategia de producto, expertise fintech, gobierno de datos, adopción de IA y blockchain & tokenización — combinados de forma creíble en una sola relación de asesoría.' },
-  { title: 'Resultados Primero, Siempre',                 description: 'Cada proyecto se estructura en torno a resultados de negocio medibles. Definimos cómo se ve el éxito antes de comenzar y somos responsables de ello.' },
-  { title: 'Expertise Senior en tu Proyecto',             description: 'Operamos como una firma de asesoría boutique. El expertise que evalúas en la conversación es el que obtienes en el proyecto — no equipos de entrega junior.' },
-  { title: 'Perspectiva Multisectorial y Transfronteriza', description: 'Haber trabajado en banca, fintech, ciberseguridad, inmobiliaria y tecnología empresarial — y en Europa y las Américas — nos aporta un reconocimiento de patrones que la mayoría de los asesores de un solo sector no puede ofrecer.' },
-  { title: 'Diseñado para Organizaciones Ambiciosas',     description: 'Trabajamos mejor con organizaciones serias sobre la transformación — scaleups creciendo rápido, empresas medianas modernizándose y equipos de innovación empresarial que necesitan un socio que opere a su nivel.' },
-]
-
-const stepsEn = [
-  { step: '01', title: 'Discover', description: "We invest significant time understanding your organization, market, technology landscape, and the specific challenge you're trying to solve — before making any recommendations." },
-  { step: '02', title: 'Define',   description: "We scope the engagement around measurable business outcomes, agree on success criteria upfront, and design an approach that is proportionate to the challenge." },
-  { step: '03', title: 'Deliver',  description: "We operate with the accountability of a delivery team — producing tangible outputs, checking progress against outcomes, and adapting as we learn." },
-]
-const stepsEs = [
-  { step: '01', title: 'Descubrir', description: 'Invertimos tiempo significativo entendiendo tu organización, mercado, panorama tecnológico y el desafío específico que intentas resolver — antes de hacer recomendaciones.' },
-  { step: '02', title: 'Definir',   description: 'Delimitamos el proyecto en torno a resultados de negocio medibles, acordamos criterios de éxito desde el inicio y diseñamos un enfoque proporcional al desafío.' },
-  { step: '03', title: 'Entregar', description: 'Operamos con la responsabilidad de un equipo de entrega — produciendo outputs tangibles, verificando el progreso frente a los resultados y adaptándonos a medida que aprendemos.' },
+  { title: 'La Combinación que No Existe en Otro Lugar',        description: 'Disciplina de entrega empresarial, estrategia de IA, liderazgo de producto, expertise fintech, gobierno de datos y blockchain & tokenización — combinados de forma creíble en una sola relación de asesoría. La mayoría de las firmas dominan uno de estos. Nosotros dominamos la intersección.' },
+  { title: 'Las Firmas de Estrategia Asesoran. Nosotros Entregamos.', description: 'La brecha entre estrategia y ejecución es donde la mayoría de las organizaciones se atascan. Estamos estructurados para cerrar esa brecha — con profesionales que han construido y lanzado productos, no consultores que los han observado.' },
+  { title: 'Resultados Definidos Antes de Comenzar',           description: 'Cada proyecto se delimita en torno a resultados de negocio medibles acordados de antemano. Definimos cómo se ve el éxito antes de la primera factura — y somos responsables de esas definiciones.' },
+  { title: 'Expertise Senior, No un Equipo de Entrega',        description: 'Operamos como una firma de asesoría boutique. El expertise que evalúas en la conversación es el que trabaja en tu proyecto. No un equipo junior gestionado desde la distancia.' },
+  { title: 'Reconocimiento de Patrones Transfronterizo',        description: 'Habiendo operado en banca, fintech, ciberseguridad, inmobiliaria y tecnología empresarial — en España, el Reino Unido, la UE y América Latina — aportamos un reconocimiento de patrones que los asesores de un solo mercado y dominio simplemente no pueden ofrecer.' },
 ]
 
 const whyBodyEn = [
-  'Most organizations understand they need to transform — they have the ambition, often the investment, and sometimes the strategy. What they lack is a trusted partner who can operate at the intersection of emerging technology, product thinking, and enterprise delivery.',
-  'Synapxi Tech was built to close that gap. We combine deep expertise in AI, Web3, payments, product strategy, and digital transformation with the delivery credibility to actually execute — not just advise from the outside.',
-  'We work with scaleups, mid-market companies, financial institutions, and enterprise innovation teams across Europe and the Americas who are ready to translate ambition into reality.',
+  'There are two types of consulting firms. Strategy firms that produce excellent frameworks and leave. Implementation firms that execute what they\'re told without challenging the direction. Most organizations need something in between — and almost nobody offers it credibly.',
+  'Synapxi Tech was built to close that gap. We bring the intellectual rigour of a strategy firm and the delivery accountability of a practitioner. We challenge the direction when it needs challenging, and we stay through delivery when it matters.',
+  'We focus on the problems where the intersection of domains creates the most value — AI initiatives that need data governance before they can scale, tokenization strategies that need product thinking before they can go to market, digital transformations that need delivery redesign before the strategy makes sense.',
 ]
 const whyBodyEs = [
-  'La mayoría de las organizaciones entienden que necesitan transformarse — tienen la ambición, a menudo la inversión y a veces la estrategia. Lo que les falta es un socio de confianza que pueda operar en la intersección de la tecnología emergente, el pensamiento de producto y la entrega empresarial.',
-  'Synapxi Tech fue creada para cerrar esa brecha. Combinamos expertise profundo en IA, Web3, pagos, estrategia de producto y transformación digital con la credibilidad de entrega para realmente ejecutar — no solo asesorar desde afuera.',
-  'Trabajamos con scaleups, empresas medianas, instituciones financieras y equipos de innovación empresarial en Europa y las Américas que están listos para convertir la ambición en realidad.',
+  'Hay dos tipos de firmas de consultoría. Firmas de estrategia que producen excelentes frameworks y se van. Firmas de implementación que ejecutan lo que se les dice sin cuestionar la dirección. La mayoría de las organizaciones necesitan algo intermedio — y casi nadie lo ofrece de forma creíble.',
+  'Synapxi Tech fue creada para cerrar esa brecha. Aportamos el rigor intelectual de una firma de estrategia y la responsabilidad de entrega de un profesional. Cuestionamos la dirección cuando es necesario, y permanecemos durante la entrega cuando importa.',
+  'Nos centramos en los problemas donde la intersección de dominios crea el mayor valor — iniciativas de IA que necesitan gobierno de datos antes de poder escalar, estrategias de tokenización que necesitan pensamiento de producto antes de salir al mercado, transformaciones digitales que necesitan rediseño de entrega antes de que la estrategia tenga sentido.',
 ]
 
 export default function AboutPage() {
@@ -80,14 +69,22 @@ export default function AboutPage() {
   const industries = lang === 'es' ? industriesEs : industriesEn
   const regions    = lang === 'es' ? regionsEs    : regionsEn
   const choose     = lang === 'es' ? chooseEs     : chooseEn
-  const steps      = lang === 'es' ? stepsEs      : stepsEn
   const whyBody    = lang === 'es' ? whyBodyEs    : whyBodyEn
+
+  const steps = [
+    { num: '01', title: t('about','step1Title'), desc: t('about','step1Desc') },
+    { num: '02', title: t('about','step2Title'), desc: t('about','step2Desc') },
+    { num: '03', title: t('about','step3Title'), desc: t('about','step3Desc') },
+    { num: '04', title: t('about','step4Title'), desc: t('about','step4Desc') },
+  ]
 
   return (
     <>
       {/* HERO */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden" aria-label="About hero">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#001B4E] to-[#000E2B]" />
+        {/* subtle top glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#28A9E1]/5 rounded-full blur-3xl pointer-events-none" />
         <div className="relative max-w-4xl mx-auto text-center">
           <ScrollReveal>
             <span className="section-tag">{t('about','tag')}</span>
@@ -98,12 +95,13 @@ export default function AboutPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* WHY WE EXIST */}
         <section className="py-16 lg:py-20 border-b border-white/10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <ScrollReveal>
               <span className="section-tag">{t('about','whyTag')}</span>
-              <h2 className="font-display text-4xl font-bold text-white mb-6 leading-tight">{t('about','whyH2')}</h2>
+              <h2 className="font-display text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight">{t('about','whyH2')}</h2>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <div className="flex flex-col gap-5 text-white/60 leading-relaxed">
@@ -113,40 +111,74 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* MISSION & VISION */}
+        {/* MISSION & VISION — sharper copy */}
         <section className="py-16 lg:py-20 border-b border-white/10">
           <div className="grid md:grid-cols-2 gap-8">
             <ScrollReveal>
-              <div className="card-dark p-8 border-[#28A9E1]/20 h-full">
-                <div className="w-10 h-10 rounded-lg bg-[#28A9E1]/10 border border-[#28A9E1]/20 flex items-center justify-center text-[#28A9E1] text-lg mb-6">◎</div>
-                <h2 className="font-display text-2xl font-bold text-white mb-4">{t('about','missionTag')}</h2>
-                <p className="text-white/60 leading-relaxed">{t('about','missionBody')}</p>
+              <div className="relative card-dark p-8 border-[#28A9E1]/25 h-full overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#28A9E1]/5 rounded-bl-full" />
+                <div className="w-10 h-10 rounded-lg bg-[#28A9E1]/10 border border-[#28A9E1]/20 flex items-center justify-center text-[#28A9E1] text-lg mb-6 relative z-10">◎</div>
+                <h2 className="font-display text-2xl font-bold text-white mb-2 relative z-10">{t('about','missionTag')}</h2>
+                <p className="text-white/60 leading-relaxed relative z-10">{t('about','missionBody')}</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <div className="card-dark p-8 h-full">
-                <div className="w-10 h-10 rounded-lg bg-[#28A9E1]/10 border border-[#28A9E1]/20 flex items-center justify-center text-[#28A9E1] text-lg mb-6">◈</div>
-                <h2 className="font-display text-2xl font-bold text-white mb-4">{t('about','visionTag')}</h2>
-                <p className="text-white/60 leading-relaxed">{t('about','visionBody')}</p>
+              <div className="relative card-dark p-8 h-full overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#28A9E1]/3 rounded-bl-full" />
+                <div className="w-10 h-10 rounded-lg bg-[#28A9E1]/10 border border-[#28A9E1]/20 flex items-center justify-center text-[#28A9E1] text-lg mb-6 relative z-10">◈</div>
+                <h2 className="font-display text-2xl font-bold text-white mb-2 relative z-10">{t('about','visionTag')}</h2>
+                <p className="text-white/60 leading-relaxed relative z-10">{t('about','visionBody')}</p>
               </div>
             </ScrollReveal>
           </div>
         </section>
 
-        {/* APPROACH */}
+        {/* 4-STEP METHODOLOGY */}
         <section className="py-16 lg:py-20 border-b border-white/10">
           <ScrollReveal>
-            <span className="section-tag">{t('about','approachTag')}</span>
-            <h2 className="font-display text-4xl font-bold text-white mb-4">{t('about','approachH2')}</h2>
-            <p className="text-white/50 text-lg max-w-2xl mb-12">{t('about','approachSub')}</p>
+            <div className="text-center mb-14">
+              <span className="section-tag">{t('about','methodTag')}</span>
+              <h2 className="font-display text-4xl font-bold text-white mb-4">{t('about','methodH2')}</h2>
+              <p className="text-white/50 text-lg max-w-2xl mx-auto">{t('about','methodSub')}</p>
+            </div>
           </ScrollReveal>
-          <div className="grid md:grid-cols-3 gap-6">
+
+          {/* Desktop: horizontal timeline */}
+          <div className="hidden md:flex items-start gap-0 relative">
+            {/* Connector line */}
+            <div className="absolute top-10 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-[#28A9E1]/30 to-transparent" />
             {steps.map((step, i) => (
-              <ScrollReveal key={step.step} delay={i * 0.1}>
-                <div className="card-dark p-7 h-full">
-                  <div className="font-display text-4xl font-bold text-[#28A9E1]/20 mb-3">{step.step}</div>
-                  <h3 className="font-display text-xl font-semibold text-white mb-3">{step.title}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{step.description}</p>
+              <ScrollReveal key={step.num} delay={i * 0.1} className="flex-1 px-4 relative">
+                <div className="flex flex-col items-center text-center">
+                  {/* Node */}
+                  <div className="w-20 h-20 rounded-full bg-[#001B4E] border-2 border-[#28A9E1]/40 flex flex-col items-center justify-center mb-6 relative z-10 shadow-[0_0_24px_rgba(40,169,225,0.15)]">
+                    <span className="font-display text-[#28A9E1]/50 text-xs font-bold">{step.num}</span>
+                    <span className="font-display text-white text-sm font-bold leading-tight">{step.title}</span>
+                  </div>
+                  {/* Arrow (except last) */}
+                  {i < 3 && (
+                    <div className="absolute top-10 -right-3 z-20 text-[#28A9E1]/40 text-lg">›</div>
+                  )}
+                  <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Mobile: vertical */}
+          <div className="md:hidden flex flex-col gap-0 relative">
+            <div className="absolute top-10 bottom-10 left-6 w-px bg-gradient-to-b from-transparent via-[#28A9E1]/30 to-transparent" />
+            {steps.map((step, i) => (
+              <ScrollReveal key={step.num} delay={i * 0.1}>
+                <div className="flex items-start gap-5 pl-0 pb-8">
+                  <div className="w-12 h-12 rounded-full bg-[#001B4E] border-2 border-[#28A9E1]/40 flex flex-col items-center justify-center flex-shrink-0 relative z-10">
+                    <span className="font-display text-[#28A9E1]/60 text-[9px] font-bold">{step.num}</span>
+                    <span className="font-display text-white text-[10px] font-bold leading-none">{step.title}</span>
+                  </div>
+                  <div className="pt-2">
+                    <h3 className="font-display text-lg font-semibold text-white mb-2">{step.title}</h3>
+                    <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
@@ -159,7 +191,7 @@ export default function AboutPage() {
             <span className="section-tag">{t('about','expertiseTag')}</span>
             <h2 className="font-display text-4xl font-bold text-white mb-12">{t('about','expertiseH2')}</h2>
           </ScrollReveal>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {expertise.map((area, i) => (
               <ScrollReveal key={area.title} delay={i * 0.07}>
                 <div className="card-dark p-6 h-full">
@@ -181,9 +213,9 @@ export default function AboutPage() {
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <div className="flex flex-wrap gap-3">
-                {industries.map((industry) => (
-                  <span key={industry} className="px-4 py-2 rounded-full border border-white/15 text-white/70 text-sm font-medium hover:border-[#28A9E1]/40 hover:text-[#28A9E1] transition-colors cursor-default">
-                    {industry}
+                {industries.map((ind) => (
+                  <span key={ind} className="px-4 py-2 rounded-full border border-white/15 text-white/70 text-sm font-medium hover:border-[#28A9E1]/40 hover:text-[#28A9E1] transition-colors cursor-default">
+                    {ind}
                   </span>
                 ))}
               </div>
@@ -197,7 +229,7 @@ export default function AboutPage() {
             <span className="section-tag">{t('about','geoTag')}</span>
             <h2 className="font-display text-4xl font-bold text-white mb-12">{t('about','geoH2')}</h2>
           </ScrollReveal>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {regions.map((region, i) => (
               <ScrollReveal key={region.name} delay={i * 0.08}>
                 <div className="card-dark p-6 h-full">
@@ -215,11 +247,13 @@ export default function AboutPage() {
             <span className="section-tag">{t('about','chooseTag')}</span>
             <h2 className="font-display text-4xl font-bold text-white mb-12">{t('about','chooseH2')}</h2>
           </ScrollReveal>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-5">
             {choose.map((reason, i) => (
               <ScrollReveal key={reason.title} delay={i * 0.07}>
                 <div className="card-dark p-7 flex items-start gap-6">
-                  <div className="font-display text-2xl font-bold text-[#28A9E1]/30 w-10 flex-shrink-0 text-right">{String(i+1).padStart(2,'0')}</div>
+                  <div className="font-display text-2xl font-bold text-[#28A9E1]/25 w-10 flex-shrink-0 text-right leading-none mt-1">
+                    {String(i+1).padStart(2,'0')}
+                  </div>
                   <div>
                     <h3 className="font-display text-xl font-semibold text-white mb-2">{reason.title}</h3>
                     <p className="text-white/50 leading-relaxed">{reason.description}</p>
