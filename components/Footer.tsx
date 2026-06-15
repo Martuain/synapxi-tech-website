@@ -5,7 +5,7 @@ import { useLang } from '@/context/LangContext'
 import { SynapxiLogo } from './Navbar'
 
 export default function Footer() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   const navLinks = [
     { href: '/',             label: t('nav', 'home') },
@@ -16,13 +16,21 @@ export default function Footer() {
     { href: '/contact',      label: t('nav', 'contact') },
   ]
 
-  const services = [
-    { href: '/services#ai-strategy', label: 'AI Strategy & Transformation' },
-    { href: '/services#web3',        label: 'Web3 & Tokenization Advisory' },
-    { href: '/services#delivery',    label: 'Delivery Transformation' },
-    { href: '/services#fractional',  label: 'Fractional Product Leadership' },
-    { href: '/services#payments',    label: 'Payments & Fintech Consulting' },
-  ]
+  const services = lang === 'es'
+    ? [
+        { href: '/services#ai-strategy', label: 'Estrategia de IA & Transformación' },
+        { href: '/services#web3',        label: 'Asesoría Web3 & Tokenización' },
+        { href: '/services#delivery',    label: 'Transformación de Entrega' },
+        { href: '/services#fractional',  label: 'Liderazgo de Producto Fraccionado' },
+        { href: '/services#payments',    label: 'Consultoría de Pagos & Fintech' },
+      ]
+    : [
+        { href: '/services#ai-strategy', label: 'AI Strategy & Transformation' },
+        { href: '/services#web3',        label: 'Web3 & Tokenization Advisory' },
+        { href: '/services#delivery',    label: 'Delivery Transformation' },
+        { href: '/services#fractional',  label: 'Fractional Product Leadership' },
+        { href: '/services#payments',    label: 'Payments & Fintech Consulting' },
+      ]
 
   return (
     <footer className="bg-[#000E2B] border-t border-white/10" aria-label="Footer">

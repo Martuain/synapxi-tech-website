@@ -74,7 +74,7 @@ export const translations = {
     why2Title:    { en: 'Outcome-Driven Engagement', es: 'Proyecto Orientado a Resultados' },
     why2Desc:     { en: 'Every engagement is scoped around measurable business outcomes. Success metrics are defined before work begins — and we are accountable to them.', es: 'Cada proyecto se delimita en torno a resultados de negocio medibles. Las métricas de éxito se definen antes de comenzar — y somos responsables de ellas.' },
     why3Title:    { en: 'Global Reach, Proven in Key Markets', es: 'Alcance Global, Probado en Mercados Clave' },
-    why3Desc:     { en: 'Supporting ambitious organizations globally, with proven experience across Europe and the Americas. Regulatory, cultural, and commercial context built through real engagements.', es: 'Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas. Contexto regulatorio, cultural y comercial construido a través de proyectos reales.' },
+    why3Desc:     { en: 'Supporting ambitious organizations worldwide, with proven experience across Europe and the Americas. Regulatory, cultural, and commercial context built through real engagements.', es: 'Apoyamos a organizaciones ambiciosas en todo el mundo, con experiencia demostrada en Europa y las Américas. Contexto regulatorio, cultural y comercial construido a través de proyectos reales.' },
     why4Title:    { en: 'Boutique, Not Body Shop', es: 'Boutique, No Consultoría Masiva' },
     why4Desc:     { en: 'Premium advisory practice. The senior expertise you evaluate in the conversation is the expertise that works on your engagement — not a junior delivery team.', es: 'Práctica de asesoría premium. El expertise senior que evalúas en la conversación es el que trabaja en tu proyecto — no un equipo de entrega junior.' },
 
@@ -191,7 +191,7 @@ export const translations = {
     next3:        { en: 'We scope a proposal aligned to your specific challenge and budget.', es: 'Definimos una propuesta alineada a tu desafío específico y presupuesto.' },
     sizesH2:      { en: 'Typical Engagement Sizes', es: 'Tamaños de Proyecto Típicos' },
     basedH2:      { en: 'Based in Madrid', es: 'Con Base en Madrid' },
-    basedBody:    { en: 'Headquartered in Madrid, Spain. Supporting ambitious organizations globally, with proven experience across Europe and the Americas.', es: 'Con sede en Madrid, España. Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas.' },
+    basedBody:    { en: 'Headquartered in Madrid, Spain. Supporting ambitious organizations worldwide, with proven experience across Europe and the Americas.', es: 'Con sede en Madrid, España. Apoyamos a organizaciones ambiciosas en todo el mundo, con experiencia demostrada en Europa y las Américas.' },
     formH2:       { en: 'Tell Us About Your Challenge', es: 'Cuéntanos Sobre tu Desafío' },
     fName:        { en: 'Full Name', es: 'Nombre Completo' },
     fNameP:       { en: 'Your name', es: 'Tu nombre' },
@@ -220,7 +220,7 @@ export const translations = {
   // ─── FOOTER ────────────────────────────────────────────────────────────────
   footer: {
     tagline:      { en: 'Innovate. Disrupt. Globalize.', es: 'Innova. Disrumpe. Globaliza.' },
-    desc:         { en: 'Boutique innovation advisory for AI, tokenization, product strategy and digital transformation. Supporting ambitious organizations globally, with proven experience across Europe and the Americas.', es: 'Asesoría boutique en innovación para IA, tokenización, estrategia de producto y transformación digital. Apoyamos a organizaciones ambiciosas a nivel global, con experiencia demostrada en Europa y las Américas.' },
+    desc:         { en: 'Boutique innovation advisory for AI, tokenization, product strategy and digital transformation. Supporting ambitious organizations worldwide, with proven experience across Europe and the Americas.', es: 'Asesoría boutique en innovación para IA, tokenización, estrategia de producto y transformación digital. Apoyamos a organizaciones ambiciosas en todo el mundo, con experiencia demostrada en Europa y las Américas.' },
     navTitle:     { en: 'Navigation', es: 'Navegación' },
     servicesTitle:{ en: 'Services', es: 'Servicios' },
     privacy:      { en: 'Privacy Policy', es: 'Política de Privacidad' },

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import NeuralNetwork from '@/components/NeuralNetwork'
 import ScrollReveal from '@/components/ScrollReveal'
 import CountUp from '@/components/CountUp'
+import TechEcosystem from '@/components/TechEcosystem'
 import { useLang } from '@/context/LangContext'
 
 const expertiseItems = [
@@ -314,6 +315,9 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* ══════════════════════════════════════════════════════ TECH ECOSYSTEM */}
+      <TechEcosystem />
 
       {/* ══════════════════════════════════════════════════════ FEATURED CASE STUDY */}
       <section className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-[#000E2B]/60" aria-label="Featured case study">

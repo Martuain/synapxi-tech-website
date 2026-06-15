@@ -29,14 +29,14 @@ const regionsEn = [
   { name: 'United Kingdom', description: 'Active in the UK fintech and financial services market. Experience with FCA-regulated environments and UK-EU cross-border dynamics post-Brexit.' },
   { name: 'Europe',         description: 'Cross-border project experience across the EU. Regulatory knowledge spanning MiCA, PSD2, DORA, GDPR, and ECB digital asset initiatives.' },
   { name: 'Americas',       description: 'Delivery experience in Latin America and North America. Fintech ecosystems across Mexico, Colombia, Brazil, and the USA.' },
-  { name: 'Global',         description: 'Supporting ambitious organizations globally. Our proven experience is concentrated in Europe and the Americas — and we work wherever the right challenge takes us.' },
+  { name: 'Global',         description: 'Supporting ambitious organizations worldwide, with proven experience across Europe and the Americas — and the capability to work wherever the right challenge takes us.' },
 ]
 const regionsEs = [
   { name: 'España',         description: 'Con sede en Madrid. Profundas raíces en el mercado español y el ecosistema del sur de Europa, incluyendo contexto regulatorio y comercial.' },
   { name: 'Reino Unido',    description: 'Activos en el mercado fintech y de servicios financieros del Reino Unido. Experiencia con entornos regulados por la FCA y dinámicas transfronterizas UE-RU post-Brexit.' },
   { name: 'Europa',         description: 'Experiencia en proyectos transfronterizos en la UE. Conocimiento regulatorio que abarca MiCA, PSD2, DORA, GDPR e iniciativas de activos digitales del BCE.' },
   { name: 'Américas',       description: 'Experiencia de entrega en América Latina y América del Norte. Ecosistemas fintech en México, Colombia, Brasil y EE.UU.' },
-  { name: 'Global',         description: 'Apoyamos a organizaciones ambiciosas a nivel global. Nuestra experiencia demostrada está concentrada en Europa y las Américas — y trabajamos donde el desafío correcto nos lleve.' },
+  { name: 'Global',         description: 'Apoyamos a organizaciones ambiciosas en todo el mundo, con experiencia demostrada en Europa y las Américas — y la capacidad de trabajar donde el desafío correcto nos lleve.' },
 ]
 
 const chooseEn = [
