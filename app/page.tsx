@@ -140,21 +140,39 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
+          {/* Top row — 3 hero metrics, larger */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5 mb-4 lg:mb-5">
             {[
-              { valKey: 'proven1Val', labKey: 'proven1Lab', accent: true  },
-              { valKey: 'proven2Val', labKey: 'proven2Lab', accent: false },
-              { valKey: 'proven3Val', labKey: 'proven3Lab', accent: true  },
-              { valKey: 'proven4Val', labKey: 'proven4Lab', accent: false },
-              { valKey: 'proven5Val', labKey: 'proven5Lab', accent: true  },
-              { valKey: 'proven6Val', labKey: 'proven6Lab', accent: false },
+              { value: 50000, suffix: ' TPS',  label: lang === 'es' ? 'Infraestructura de pagos escalada' : 'Payment infrastructure scaled',           icon: '◉' },
+              { value: 2.5,   suffix: 'M+',    label: lang === 'es' ? 'Usuarios bancarios migrados a plataformas digitales' : 'Banking users migrated to digital platforms', icon: '◫', decimals: 1 },
+              { value: 470,   suffix: 'M',     label: lang === 'es' ? 'En activos tokenizados y digitales delimitados (€)' : 'In tokenized and digital assets scoped (€)', icon: '◈', prefix: '€' },
             ].map((m, i) => (
-              <ScrollReveal key={m.valKey} delay={i * 0.07}>
-                <div className={`card-dark p-6 lg:p-8 rounded-xl h-full flex flex-col justify-between ${m.accent ? 'border-[#28A9E1]/25 bg-[#28A9E1]/4' : ''}`}>
-                  <p className="font-display text-3xl lg:text-4xl font-bold text-[#28A9E1] mb-3 leading-none">
-                    {t('home', m.valKey)}
-                  </p>
-                  <p className="text-white/55 text-sm leading-snug">{t('home', m.labKey)}</p>
+              <ScrollReveal key={m.label} delay={i * 0.08}>
+                <div className="relative overflow-hidden rounded-2xl border border-[#28A9E1]/30 bg-gradient-to-br from-[#28A9E1]/8 to-transparent p-8 lg:p-10 text-center group hover:border-[#28A9E1]/60 transition-all duration-300">
+                  <div className="absolute top-3 right-4 text-[#28A9E1]/20 text-2xl" aria-hidden="true">{m.icon}</div>
+                  <div className="font-display text-5xl lg:text-6xl font-bold text-[#28A9E1] mb-3 leading-none tracking-tight">
+                    <CountUp end={m.value} suffix={m.suffix} prefix={m.prefix ?? ''} decimals={m.decimals} />
+                  </div>
+                  <p className="text-white/60 text-sm leading-snug">{m.label}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Bottom row — 3 supporting metrics */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5">
+            {[
+              { value: 90,  suffix: '%',      label: lang === 'es' ? 'Reducción del esfuerzo operativo mediante automatización' : 'Operations effort reduction through automation', icon: '⬡' },
+              { value: 85,  suffix: '%',      label: lang === 'es' ? 'Reducción del fraude con detección basada en IA' : 'Fraud reduction via AI-powered detection',           icon: '⬡' },
+              { value: 15,  suffix: ' TB/day',label: lang === 'es' ? 'Analítica de seguridad procesada en tiempo real' : 'Security analytics processed in real time',          icon: '◉' },
+            ].map((m, i) => (
+              <ScrollReveal key={m.label} delay={0.24 + i * 0.08}>
+                <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/3 p-7 text-center hover:border-[#28A9E1]/30 hover:bg-[#28A9E1]/5 transition-all duration-300">
+                  <div className="absolute top-3 right-4 text-[#28A9E1]/15 text-xl" aria-hidden="true">{m.icon}</div>
+                  <div className="font-display text-4xl lg:text-5xl font-bold text-[#28A9E1] mb-3 leading-none">
+                    <CountUp end={m.value} suffix={m.suffix} />
+                  </div>
+                  <p className="text-white/55 text-sm leading-snug">{m.label}</p>
                 </div>
               </ScrollReveal>
             ))}
